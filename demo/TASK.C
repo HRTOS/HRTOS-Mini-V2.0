@@ -1,5 +1,5 @@
 
-#include<os_coop.h>
+#include<os.h>
 sfr P0M0 = 0x94;
 sfr P0M1 = 0x93;
 void task_0(void)
