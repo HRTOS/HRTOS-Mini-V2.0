@@ -1,0 +1,13 @@
+#include "os.h"
+
+void os_exit_critical()
+{
+    if(os_en_cr_count>=1)
+    {
+        os_en_cr_count--;
+        if(os_en_cr_count==0)
+        {
+            EA=1;
+        }
+    }
+}
